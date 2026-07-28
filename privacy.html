@@ -1,162 +1,413 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gizlilik Politikas&#305; | Kalp ve Ya&#351;am: Sa&#287;l&#305;k Takibi</title>
-      <style>
-                :root {
-                              --primary-color: #e63946;
-                              --primary-dark: #d62828;
-                              --bg-color: #f8f9fa;
-                              --card-bg: #ffffff;
-                              --text-color: #2b2d42;
-                              --text-secondary: #6c757d;
-                              --border-color: #e9ecef;
-                }
-                body {
-                              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-                              background-color: var(--bg-color);
-                              color: var(--text-color);
-                              line-height: 1.6;
-                              margin: 0;
-                              padding: 0;
-                }
-                .header {
-                              background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
-                              color: white;
-                              padding: 3rem 1.5rem;
-                              text-align: center;
-                }
-                .header h1 {
-                              margin: 0 0 0.5rem 0;
-                              font-size: 2.2rem;
-                              font-weight: 700;
-                }
-                .header p {
-                              margin: 0;
-                              opacity: 0.9;
-                              font-size: 1.1rem;
-                }
-                .badge {
-                              display: inline-block;
-                              background-color: var(--primary-color);
-                              color: white;
-                              padding: 0.25rem 0.75rem;
-                              border-radius: 50px;
-                              font-size: 0.85rem;
-                              margin-top: 1rem;
-                              font-weight: 600;
-                }
-                .container {
-                              max-width: 900px;
-                              margin: -2rem auto 3rem auto;
-                              padding: 0 1.5rem;
-                }
-                .card {
-                              background-color: var(--card-bg);
-                              border-radius: 12px;
-                              padding: 2rem;
-                              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-                              margin-bottom: 2rem;
-                              border: 1px solid var(--border-color);
-                }
-                h2 {
-                              color: #1d3557;
-                              font-size: 1.4rem;
-                              border-bottom: 2px solid var(--border-color);
-                              padding-bottom: 0.5rem;
-                              margin-top: 1.8rem;
-                }
-                h2:first-of-type {
-                              margin-top: 0;
-                }
-                h3 {
-                              color: var(--primary-dark);
-                              font-size: 1.1rem;
-                              margin-top: 1.2rem;
-                }
-                ul {
-                              padding-left: 1.5rem;
-                }
-                li {
-                              margin-bottom: 0.5rem;
-                }
-                .highlight-box {
-                              background-color: #f1faee;
-                              border-left: 4px solid #457b9d;
-                              padding: 1rem 1.2rem;
-                              margin: 1.5rem 0;
-                              border-radius: 0 8px 8px 0;
-                }
-                .footer {
-                              text-align: center;
-                              padding: 2rem;
-                              color: var(--text-secondary);
-                              font-size: 0.9rem;
-                              border-top: 1px solid var(--border-color);
-                              background-color: white;
-                }
-                @media (max-width: 600px) {
-                              .header h1 {
-                                                font-size: 1.7rem;
-                              }
-                              .card {
-                                                padding: 1.25rem;
-                              }
-                }
-            </style>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası / Privacy Policy - Kalp ve Yaşam (com.vistra.cardioguard)</title>
+    <style>
+        :root {
+            --primary-color: #e63946;
+            --primary-dark: #d62828;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #2b2d42;
+            --text-secondary: #6c757d;
+            --border-color: #e9ecef;
+            --accent-bg: #f1faee;
+            --accent-border: #457b9d;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .header h1 {
+            color: var(--primary-dark);
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+
+        .lang-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--bg-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        select {
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+            background-color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        select:focus {
+            border-color: var(--primary-color);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #1d3557;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1d3557;
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 32px;
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.05rem;
+            margin-top: 18px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: var(--accent-bg);
+            border-left: 4px solid var(--accent-border);
+            padding: 16px 20px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            color: #856404;
+            padding: 16px 20px;
+            margin: 22px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .policy-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .policy-content.active {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px 0 10px 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 35px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 12px;
+                margin: 20px auto;
+            }
+            .card {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
         <div class="header">
-                  <h1>Kalp ve Ya&#351;am: Sa&#287;l&#305;k Takibi</h1>
-                <p>Gizlilik Politikas&#305; &amp; Kullan&#305;c&#305; Verileri Bildirimi</p>
-                <div class="badge">Paket Kimli&#287;i: com.vistra.cardioguard</div>
+            <div>
+                <h1 id="app-title">Kalp ve Yaşam: Sağlık Takibi</h1>
+                <div class="subtitle">Gizlilik Politikası & Veri Saklama Bildirimi (Privacy Policy)</div>
+            </div>
+            <div class="lang-selector">
+                <label for="languageSelect">🌐</label>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="tr" selected>🇹🇷 Türkçe</option>
+                    <option value="en">🇺🇸 English</option>
+                    <option value="de">🇩🇪 Deutsch</option>
+                    <option value="ru">🇷🇺 Русский</option>
+                </select>
+            </div>
         </div>
-      <div class="container">
-              <div class="card">
-                          <p><strong>Son G&#252;ncelleme Tarihi:</strong> 27 Temmuz 2026</p>
-                          <p><strong>Uygulama Ad&#305;:</strong> Kalp ve Ya&#351;am: Sa&#287;l&#305;k Takibi (Heart &amp; Lifestyle Tracker)</p>
-                          <p><strong>Geli&#351;tirici / Yay&#305;nc&#305;:</strong>strong> Kalp ve Ya&#351;am Geli&#351;tirici Ekibi</p>
-                          <div class="highlight-box">
-                                          <strong>&#214;zet Beyan:</strong> "Kalp ve Ya&#351;am: Sa&#287;l&#305;k Takibi" uygulamam&#305;z tamamen <em>&#231;evrimd&#305;&#351;&#305; &#246;ncelikli (offline-first)</em> olarak tasarlanm&#305;&#351;t&#305;r. Ki&#351;isel sa&#287;l&#305;k verileriniz (ya&#351;, boy, kilo, su t&#252;ketimi, uyku, sigara kullan&#305;m&#305; vb.) hi&#231;bir harici bulut sunucusuna veya &#252;&#231;&#252;nc&#252; taraflara aktar&#305;lmaz; yaln&#305;zca kendi cihaz&#305;n&#305;zda yerel SQLite (Room) veritaban&#305;nda saklan&#305;r.
-                          </div>
-                          <h2>1. Genel Bak&#305;&#351; ve Tan&#305;mlay&#305;c&#305; Bilgiler</h2>
-                          <p>&#304;&#351;bu Gizlilik Politikas&#305;, <strong>Kalp ve Ya&#351;am: Sa&#287;l&#305;k Takibi</strong> (bundan b&#246;yle "Uygulama" olarak an&#305;lacakt&#305;r) mobil uygulamas&#305;n&#305;n kullan&#305;c&#305;lar&#305;n ki&#351;isel verilerini ve sa&#287;l&#305;k kay&#305;tlar&#305;n&#305; nas&#305;l toplad&#305;&#287;&#305;n&#305;, kulland&#305;&#287;&#305;n&#305; ve korudu&#287;unu a&#231;&#305;klar. Uygulamam&#305;z&#305; indirerek veya kullanarak i&#351;bu politikan&#305;n &#351;artlar&#305;n&#305; kabul etmi&#351; say&#305;l&#305;rs&#305;n&#305;z.</p>
-                          <h2>2. Toplanan Veri T&#252;rleri ve &#304;&#351;leme Ama&#231;lar&#305;</h2>
-                          <p>Uygulamam&#305;z i&#231;erisinde i&#351;lenen veriler yaln&#305;zca uygulaman&#305;n temel i&#351;levlerini yerine getirmek amac&#305;yla kullan&#305;l&#305;r:</p>
-                          <ul>
-                                            <li><strong>Fiziksel Profil Verileri:</strong> Ya&#351;, cinsiyet, boy, kilo. Bu veriler V&#252;cut Kitle &#304;ndeksi (VK&#304;) ve ki&#351;iselle&#351;tirilmi&#351; su/uyku hedeflerini hesaplamak i&#231;in kullan&#305;l&#305;r.</li>
-                                          <li><strong>T&#305;bbi Risk Parametreleri:</strong> Kan bas&#305;nc&#305; (tansiyon) kategorisi, kolesterol d&#252;zeyi, diyabet durumu ve ailevi kalp ge&#231;mi&#351;i. Bu veriler genel kalp sa&#287;l&#305;&#287;&#305; skorunuzu ve fark&#305;ndal&#305;k &#246;nerilerinizi olu&#351;turmak i&#231;in de&#287;erlendirilir.</li>
-                                          <li><strong>G&#252;nl&#252;k Ya&#351;am Tarz&#305; G&#252;nl&#252;kleri:</strong>strong> G&#252;nl&#252;k i&#231;ilen su miktar&#305;, uyku saatleri ve kalitesi, fiziksel aktivite dakikalar&#305; ve sigara kullan&#305;m kay&#305;tlar&#305;. Bu veriler haftal&#305;k ve ayl&#305;k geli&#351;im raporlar&#305;n&#305; grafiksel olarak sunmak amac&#305;yla i&#351;lenir.</li>
-                                          <li><strong>Tercih ve Dil Ayarlar&#305;:</strong> Uygulama i&#231;i aray&#252;z dili ve tema tercihleri.</li>
-                          </ul>
-                          <h2>3. Veri Depolama Mimarisi ve G&#252;venlik</h2>
-                          <p>Google Play Kullan&#305;c&#305; Verileri Politikas&#305; do&#287;rultusunda verilerinizin g&#252;venli&#287;i &#351;u ilkelerle sa&#287;lan&#305;r:</p>
-                          <ul>
-                                          <li><strong>Tam &#199;evrimd&#305;&#351;&#305; Depolama:</strong> Girmi&#351; oldu&#287;unuz t&#252;m sa&#287;l&#305;k ve ya&#351;am tarz&#305; verileri cihaz&#305;n&#305;zdaki korumal&#305; Android Sandbox alan&#305; i&#231;erisinde yer alan SQLite (Room DB) veritaban&#305;nda saklan&#305;r.</li>
-                                          <li><strong>Hesap Olu&#351;turmama:</strong> Uygulamam&#305;z &#252;yelik, e-posta ile giri&#351; veya parola do&#287;rulamas&#305; gerektirmez. Bu sayede sistemsel veri s&#305;z&#305;nt&#305;s&#305; veya kimlik h&#305;rs&#305;zl&#305;&#287;&#305; riski bulunmamaktad&#305;r.</li>
-                                          <li><strong>Veri Aktar&#305;m&#305; Yoktur:</strong> T&#305;bbi g&#252;nl&#252;kleriniz harici hi&#231;bir sunucuya, veritaban&#305;na veya analitik sa&#287;lay&#305;c&#305;ya iletilmez.</li>
-                          </ul>
-                          <h2>4. &#220;&#231;&#252;nc&#252; Taraf Servisler ve Reklam Uygulamalar&#305;</h2>
-                          <p>Uygulamam&#305;z&#305;n &#252;cretsiz olarak sunulabilmesi amac&#305;yla standart Google Play Hizmetleri ve AdMob (Google Ads) entegrasyonu bar&#305;nd&#305;r&#305;labilir:</p>
-                          <ul>
-                                          <li>Reklam g&#246;sterimleri i&#231;in anonim cihaz tan&#305;mlay&#305;c&#305;lar&#305; (Ad-ID) Google politikalar&#305;na uygun &#351;ekilde kullan&#305;labilir.</li>
-                                          <li><strong>Kesin Kural:</strong> Cihaz&#305;n&#305;zda saklanan ki&#351;sel sa&#287;l&#305;k g&#252;nl&#252;kleriniz, ya&#351;/kilo bilgisi veya kardiomanyetik risk skorlar&#305;n&#305;z reklam a&#287;lar&#305;yla ASLA payla&#351;&#305;lmaz ve ki&#351;iselle&#351;tirilmi&#351; reklam hedeflemesinde kullan&#305;lmaz.</li>
-                          </ul>
-                          <h2>5. Veri Silme ve Kullan&#305;c&#305; Haklar&#305; (Data Deletion)</h2>
-                          <p>Kullan&#305;c&#305;lar&#305;m&#305;z verileri &#252;zerinde %100 silme ve kontrol hakk&#305;na sahiptir:</p>
-                          <ul>
-                                          <li><strong>Uygulama &#304;&#231;i Silme:</strong> Uygulama i&#231;erisindeki <em>Ayarlar -&gt; Kardio-Profilini S&#305;f&#305;rla</em> se&#231;ene&#287;ini kulland&#305;&#287;&#305;n&#305;zda, yerel veritaban&#305;ndaki t&#252;m ge&#231;mi&#351; kay&#305;tlar&#305;n&#305;z kal&#305;c&#305; olarak imha edilir.</li>
-                                          <li><strong>Uygulamay&#305; Kald&#305;rma:</strong> Uygulamay&#305; Android cihaz&#305;n&#305;zdan sildi&#287;inizde, Android i&#351;letim sistemi uygulamaya ait t&#252;m yerel veritaban&#305; ve &#246;nbellek klas&#246;rlerini an&#305;nda kal&#305;c&#305; olarak siler.</li>
-                          </ul>
-                          <h2>6. &#199;ocuklar&#305;n Gizlili&#287;i</h2>
-                          <p>Uygulamam&#305;z 13 ya&#351;&#305;n alt&#305;ndaki &#231;ocuklar&#305; hedeflememektedir. Ebeveyn rehberli&#287;i olmaks&#305;z&#305;n &#231;ocuklar&#305;n ki&#351;isel verilerinin toplanmas&#305;na y&#246;nelik bir mekanizma i&#231;ermez.</p>
-                          <h2>7. T&#305;bbi Sorumluluk Reddi (Clinical Disclaimer)</h2>
-                          <p>Uygulama taraf&#305;ndan &#252;retilen Kalp Sa&#287;l&#305;&#287;&#305; Skoru ve ya&#351;am tarz&#305; &#246;nerileri yaln&#305;zca bilgilendirme ve fark&#305;ndal&#305;k ama&#231;l&#305;d&#305;r. Uygulama bir t&#305;bbi cihaz veya te&#351;his arac&#305; de&#287;ildir. Herhangi bir t&#305;bbi &#351;ikayetinizde mutlaka yetkili bir hekime ba&#351;vurunuz.</p>
-                          <h2>8. &#304;leti&#351;im Bilgileri</h2>
-                          <p>Gizlilik politikam&#305;z veya veri uygulamalar&#305;m&#305;z hakk&#305;nda sorular&#305;n&#305;z, geri bildirimleriniz veya talepleriniz i&#231;in bizimle ileti&#351;ime ge&#231;ebilirsiniz:</p>
-              <ul>
+
+        <div class="badge">Paket / Application ID: com.vistra.cardioguard</div>
+
+        <!-- ================= 🇹🇷 TÜRKÇE İÇERİK ================= -->
+        <div id="lang-tr" class="policy-content active">
+            <p><strong>Son Güncelleme Tarihi:</strong> 28 Temmuz 2026</p>
+            <p><strong>Uygulama Adı:</strong> Kalp ve Yaşam: Sağlık Takibi (Heart & Lifestyle Tracker)</p>
+            <p><strong>Paket Kimliği (Package ID):</strong> <code>com.vistra.cardioguard</code></p>
+            <p><strong>Geliştirici Ekibi:</strong> Kalp ve Yaşam Geliştirme Ekibi</p>
+
+            <div class="highlight-box">
+                <strong>Özet Beyan:</strong> "Kalp ve Yaşam: Sağlık Takibi" (com.vistra.cardioguard) mobil uygulaması %100 <em>çevrimdışı öncelikli (offline-first)</em> mimari ile çalışmaktadır. Girmiş olduğunuz tüm kişisel ve tıbbi günlükler harici hiçbir sunucuya aktarılmaz; yalnızca cihazınızdaki yerel Android SQLite (Room) veritabanında saklanır.
+            </div>
+
+            <h2>1. Uygulama İçinde İşlenen Veri Türleri ve Amaçları</h2>
+            <p>Uygulamamız içerisinde işlenen veriler yalnızca uygulamanın temel işlevlerini yerel olarak hesaplamak amacıyla kullanılır:</p>
+            <ul>
+                <li><strong>Fiziksel Profil Verileri:</strong> Yaş, cinsiyet, boy, kilo. (Vücut Kitle İndeksi (VKİ) ve kişiselleştirilmiş su/uyku hedeflerini hesaplamak için).</li>
+                <li><strong>Klinik ve Tıbbi Risk Parametreleri:</strong> Kan basıncı (tansiyon) kategorisi, kolesterol düzeyi, diyabet durumu ve ailevi kalp hastalığı geçmişi. (Genel kalp sağlığı skorunuzu ve farkındalık grafikleri oluşturmak için).</li>
+                <li><strong>Günlük Yaşam Takip Günlükleri:</strong> Su tüketim miktarları (ml), uyku süreleri ve saatleri, yürüyüş ve egzersiz dakikaları, stres seviyesi (1-5), sigara kullanım sayısı, meyve/sebze tüketim durumu. (Gelişim raporlarınızı grafiksel olarak sunmak için).</li>
+                <li><strong>Uygulama İçi Tercihler:</strong> Seçili arayüz dili (Türkçe, İngilizce, Almanca, Rusça), karanlık mod tercihi ve kazanılan rozet/başarı bilgileri.</li>
+            </ul>
+
+            <h2>2. VERİ SAKLAMA POLİTİKASI (Data Retention Policy)</h2>
+            <div class="alert-box">
+                <strong>Veri Saklama Bildirimi:</strong> Uygulamamız kullanıcı verilerini harici sunucularda veya bulut veritabanlarında <strong>SAKLAMAMAKTA VE TUTMAMAKTADIR</strong>.
+            </div>
+            <p>Google Play Kullanıcı Verileri Politikaları doğrultusunda veri saklama uygulamalarımız şu ilkelere dayanır:</p>
+            <ul>
+                <li><strong>Harici / Bulut Depolama Yoktur:</strong> Uygulamamız e-posta kaydı, kullanıcı hesabı veya harici sunucu senkronizasyonu içermez. Sunucularımızda veya herhangi bir bulut sağlayıcısında hiçbir kullanıcı verisi toplanmaz, tutulmaz veya saklanmaz.</li>
+                <li><strong>Cihaz İçi Yerel Depolama Süresi:</strong> Girmiş olduğunuz veriler yalnızca Android işletim sisteminin sunduğu korumalı Sandbox alanındaki SQLite (Room DB) veritabanında saklanır. Verileriniz yalnızca uygulama cihazınızda yüklü kaldığı sürece cihazınızda saklanır.</li>
+            </ul>
+
+            <h2>3. VERİ SİLME YÖNTEMLERİ VE KULLANICI HAKLARI (Data Deletion Policy)</h2>
+            <p>Kullanıcılarımız verileri üzerinde %100 silme ve denetim hakkına sahiptir:</p>
+            <ul>
+                <li><strong>Uygulama İçi Veri Silme:</strong> Uygulama içerisindeki <em>Ayarlar -> Profil / Verileri Sıfırla</em> seçeneğine basarak SQLite veritabanındaki tüm tabloları (`user_profile`, `daily_logs`, `water_logs`, `sleep_logs`, `activity_logs`, `smoking_logs`, `achievements`) anında ve kalıcı olarak silebilirsiniz.</li>
+                <li><strong>Uygulamayı Kaldırarak Silme:</strong> Uygulamayı Android cihazınızdan kaldırdığınızda, Android işletim sistemi uygulamaya ait tüm veritabanı ve yerel depolama klasörlerini anında ve kalıcı olarak siler. Harici sunucularda veri tutulmadığı için arka planda saklanan hiçbir artık veri kalmaz.</li>
+            </ul>
+
+            <h2>4. Üçüncü Taraf Servisler ve Reklam Uygulamaları</h2>
+            <p>Uygulamamızın ücretsiz olarak sunulabilmesi amacıyla standart Google Play Hizmetleri ve AdMob (Google Ads) entegrasyonu barındırılmaktadır:</p>
+            <ul>
+                <li>Reklam gösterimleri için anonim cihaz tanımlayıcıları (Ad-ID) Google politikalarına uygun şekilde işlenebilir.</li>
+                <li><strong>Kesin Kural:</strong> Sağlık günlükleriniz, yaş/kilo bilginiz veya kalp risk skorlarınız AdMob veya başka bir üçüncü tarafla ASLA paylaşılmaz ve reklam hedeflemesinde kullanılmaz.</li>
+            </ul>
+
+            <h2>5. Çocukların Gizliliği</h2>
+            <p>Uygulamamız 13 yaşın altındaki çocukları hedeflememektedir ve çocuklardan kişisel veri toplamaz.</p>
+
+            <h2>6. Tıbbi Sorumluluk Reddi (Clinical Disclaimer)</h2>
+            <p>
+                Uygulama tarafından üretilen Kalp Sağlığı Skoru ve yaşam tarzı önerileri yalnızca bilgilendirme ve farkındalık amaçlıdır. Uygulama bir tıbbi cihaz veya teşhis aracı değildir. Herhangi bir tıbbi şikayetinizde mutlaka yetkili bir hekime başvurunuz.
+            </p>
+
+            <h2>7. İletişim Bilgileri</h2>
+            <p>Gizlilik politikamız hakkındaki sorularınız için bizimle iletişime geçebilirsiniz:</p>
+            <ul>
                 <li><strong>E-posta:</strong> support@cardioguard.app</li>
-              <li><strong>Uygulama:</strong> Kalp ve Ya&#351;am: Sa&#287;l&#305;k Takibi (com.vistra.cardioguard)</li>
-              </ul>
+                <li><strong>Uygulama Paket Adı:</strong> com.vistra.cardioguard</li>
+            </ul>
+        </div>
+
+        <!-- ================= 🇺🇸 ENGLISH CONTENT ================= -->
+        <div id="lang-en" class="policy-content">
+            <p><strong>Last Updated:</strong> July 28, 2026</p>
+            <p><strong>Application Name:</strong> Heart & Lifestyle Tracker (Kalp ve Yaşam: Sağlık Takibi)</p>
+            <p><strong>Package ID:</strong> <code>com.vistra.cardioguard</code></p>
+            <p><strong>Developer Team:</strong> Heart & Lifestyle Development Team</p>
+
+            <div class="highlight-box">
+                <strong>Summary Statement:</strong> "Heart & Lifestyle Tracker" (com.vistra.cardioguard) is built with a 100% <em>offline-first</em> architecture. All your personal profile parameters and health logs are stored strictly on your device's internal SQLite (Room) database and are never transmitted to external servers.
+            </div>
+
+            <h2>1. Processed Data Categories & Purposes</h2>
+            <p>Data stored in the app is processed locally solely to deliver core fitness and wellness features:</p>
+            <ul>
+                <li><strong>Physical Profile Data:</strong> Age, gender, height, weight. (Used to compute Body Mass Index (BMI) and daily hydration/sleep targets).</li>
+                <li><strong>Clinical Risk Parameters:</strong> Blood pressure category, cholesterol level, diabetes status, and family history of heart disease. (Used to compute overall heart health awareness scores).</li>
+                <li><strong>Daily Lifestyle Logs:</strong> Water consumption (ml), sleep duration and bedtime/waketime, walking and exercise minutes, stress level (1-5), cigarette counts, fruit/vegetable intake. (Used to generate historical wellness charts).</li>
+                <li><strong>User Preferences:</strong> Selected language (English, Turkish, German, Russian), dark mode toggle, and unlocked achievements/badges.</li>
+            </ul>
+
+            <h2>2. DATA RETENTION POLICY</h2>
+            <div class="alert-box">
+                <strong>Data Retention Notice:</strong> Our application <strong>DOES NOT STORE OR RETAIN</strong> any user data on external servers or cloud databases.
+            </div>
+            <p>In accordance with Google Play User Data Policies, our data retention principles are as follows:</p>
+            <ul>
+                <li><strong>No Cloud or External Server Retention:</strong> Our app does not require user accounts, email registration, or cloud backup. No user data is ever collected, stored, or retained on external servers or cloud services.</li>
+                <li><strong>Local Retention Duration:</strong> Information entered into the app is retained exclusively inside the protected SQLite (Room DB) Android sandbox on your device for as long as the application remains installed.</li>
+            </ul>
+
+            <h2>3. DATA DELETION METHODS AND USER RIGHTS (Data Deletion Policy)</h2>
+            <p>Users maintain complete 100% ownership and control over data deletion:</p>
+            <ul>
+                <li><strong>In-App Data Deletion:</strong> You can purge all database tables (`user_profile`, `daily_logs`, `water_logs`, `sleep_logs`, `activity_logs`, `smoking_logs`, `achievements`) permanently at any time by tapping <em>Settings -> Reset Profile / Clear Data</em>.</li>
+                <li><strong>Uninstallation Data Deletion:</strong> Uninstalling the application automatically prompts the Android OS to permanently wipe out all local database files and internal app storage. Because no data is stored on remote servers, no residual data remains anywhere.</li>
+            </ul>
+
+            <h2>4. Third-Party Services and Advertisements</h2>
+            <p>Our app incorporates Google Play Services and Google AdMob to display advertisements:</p>
+            <ul>
+                <li>AdMob may process anonymous advertising identifiers (Ad-ID) in compliance with Google Advertising Policies.</li>
+                <li><strong>Strict Guarantee:</strong> Your health records, profile stats, and heart risk score data are NEVER shared with advertising networks or used for targeted ads.</li>
+            </ul>
+
+            <h2>5. Children's Privacy</h2>
+            <p>Our application is not directed toward children under 13 years of age and does not collect data from children.</p>
+
+            <h2>6. Medical Disclaimer</h2>
+            <p>This app is designed for educational awareness and lifestyle tracking. It is not a certified medical device and does not diagnose, treat, or prevent any cardiovascular diseases.</p>
+
+            <h2>7. Contact Information</h2>
+            <p>If you have any questions regarding this Privacy Policy, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> support@cardioguard.app</li>
+                <li><strong>Package ID:</strong> com.vistra.cardioguard</li>
+            </ul>
+        </div>
+
+        <!-- ================= 🇩🇪 DEUTSCH INHALT ================= -->
+        <div id="lang-de" class="policy-content">
+            <p><strong>Letztes Update:</strong> 28. Juli 2026</p>
+            <p><strong>App-Name:</strong> Heart & Lifestyle Tracker (com.vistra.cardioguard)</p>
+
+            <div class="highlight-box">
+                <strong>Zusammenfassung:</strong> "Heart & Lifestyle Tracker" arbeitet zu 100% <em>Offline-First</em>. Alle persönlichen Daten verbleiben ausschließlich in der lokalen SQLite (Room) Datenbank Ihres Geräts.
+            </div>
+
+            <h2>1. Datenerfassung und Verwendungszweck</h2>
+            <p>Erfasste Daten dienen ausschließlich lokalen Berechnungen:</p>
+            <ul>
+                <li><strong>Physisches Profil:</strong> Alter, Geschlecht, Größe, Gewicht (zur BMI-Berechnung und Zielanpassung).</li>
+                <li><strong>Kardiologische Risikoindikatoren:</strong> Blutdruckkategorie, Cholesterin, Diabetes, familiäre Vorbelastung.</li>
+                <li><strong>Tägliche Gesundheitsprotokolle:</strong> Wasseraufnahme, Schlafdauer, Bewegungsprotokolle, Raucherstatistik, Stresslevel.</li>
+            </ul>
+
+            <h2>2. DATENSPEICHERUNGSPOLITIK (Data Retention Policy)</h2>
+            <div class="alert-box">
+                <strong>Hinweis zur Datenspeicherung:</strong> Unsere Anwendung speichert <strong>KEINERLEI USER-DATEN AUF EXTERNEN SERVEREN ODER CLOUD-SYSTEMEN</strong>.
+            </div>
+            <p>Lokale Daten bleiben nur so lange auf Ihrem Gerät gespeichert, wie die Anwendung installiert bleibt.</p>
+
+            <h2>3. DATENLÖSCHUNG UND BENUTZERRECHTE</h2>
+            <ul>
+                <li><strong>In-App Löschung:</strong> Über <em>Einstellungen -> Kardio-Profil zurücksetzen</em> können alle Datenbankeinträge sofort und unwiderruflich gelöscht werden.</li>
+                <li><strong>Deinstallation:</strong> Das Deinstallieren der App löscht über das Android-Betriebssystem automatisch alle lokalen Datenordner vollständig.</li>
+            </ul>
+
+            <h2>4. Drittanbieter & Werbung (Google AdMob)</h2>
+            <p>Anonyme Werbe-IDs (Ad-ID) können für AdMob verwendet werden. Sensible Gesundheitsdaten werden NIEMALS an Werbenetzwerke weitergegeben.</p>
+
+            <h2>5. Kontakt</h2>
+            <p>E-Mail: support@cardioguard.app | Paket-ID: com.vistra.cardioguard</p>
+        </div>
+
+        <!-- ================= 🇷🇺 РУССКИЙ КОНТЕНТ ================= -->
+        <div id="lang-ru" class="policy-content">
+            <p><strong>Последнее обновление:</strong> 28 июля 2026 г.</p>
+            <p><strong>Название приложения:</strong> Kalp ve Yaşam: Sağlık Takibi (com.vistra.cardioguard)</p>
+
+            <div class="highlight-box">
+                <strong>Краткое заявление:</strong> Приложение работает на 100% <em>автономно (offline-first)</em>. Все ваши данные хранятся только в локальной базе данных SQLite (Room) на вашем устройстве.
+            </div>
+
+            <h2>1. Типы данных и цели обработки</h2>
+            <p>Данные обрабатываются исключительно локально на устройстве:</p>
+            <ul>
+                <li><strong>Физический профиль:</strong> Возраст, пол, рост, вес (для расчета ИМТ и целей).</li>
+                <li><strong>Параметры риска:</strong> Давление, холестерин, диабет, семейный анамнез.</li>
+                <li><strong>Ежедневные логи:</strong> Вода, сон, физическая активность, уровень стресса, мониторинг курения.</li>
+            </ul>
+
+            <h2>2. ПОЛИТИКА ХРАНЕНИЯ ДАННЫХ (Data Retention Policy)</h2>
+            <div class="alert-box">
+                <strong>Уведомление о хранении данных:</strong> Наше приложение <strong>НЕ ХРАНИТ И НЕ УДЕРЖИВАЕТ</strong> данные пользователей на внешних серверах или в облаке.
+            </div>
+            <p>Данные хранятся локально в изолированной базе данных SQLite до тех пор, пока приложение установлено на устройстве.</p>
+
+            <h2>3. СПОСОБЫ УДАЛЕНИЯ ДАННЫХ</h2>
+            <ul>
+                <li><strong>Удаление в приложении:</strong> В меню <em>Настройки -> Сбросить профиль</em> вы можете мгновенно очистить все таблицы базы данных.</li>
+                <li><strong>Удаление приложения:</strong> При удалении приложения операционная система Android автоматически сотрет все локальные базы данных и файлы.</li>
+            </ul>
+
+            <h2>4. Реклама (Google AdMob)</h2>
+            <p>Для показа рекламы может использоваться анонимный рекламный идентификатор (Ad-ID). Медицинские данные НИКОГДА не передаются рекламодателям.</p>
+
+            <h2>5. Контакты</h2>
+            <p>Email: support@cardioguard.app | Package ID: com.vistra.cardioguard</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Kalp ve Yaşam: Sağlık Takibi (<code>com.vistra.cardioguard</code>). All rights reserved.
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeLanguage() {
+        const lang = document.getElementById('languageSelect').value;
+        document.querySelectorAll('.policy-content').forEach(el => el.classList.remove('active'));
+        document.getElementById('lang-' + lang).classList.add('active');
+        
+        const titleEl = document.getElementById('app-title');
+        if (lang === 'en' || lang === 'de') {
+            titleEl.textContent = "Heart & Lifestyle Tracker";
+        } else {
+            titleEl.textContent = "Kalp ve Yaşam: Sağlık Takibi";
+        }
+    }
+</script>
+
+</body>
+</html>
